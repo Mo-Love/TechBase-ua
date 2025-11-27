@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // <--- Це найважливіший рядок для перемикача тем
+  darkMode: 'class', // <--- ЦЕ ВКЛЮЧАЄ ТЕМНУ ТЕМУ
   theme: {
     extend: {
       fontFamily: {
@@ -12,6 +12,7 @@ export default {
       },
       animation: {
         'blob': 'blob 7s infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         blob: {
@@ -25,4 +26,3 @@ export default {
   },
   plugins: [],
 }
-
